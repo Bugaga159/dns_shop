@@ -1,4 +1,5 @@
 from django.http import HttpResponse 
+from django.shortcuts import render
 
 from .models import *
 # Create your views here.
@@ -7,5 +8,5 @@ from .models import *
 
 	return HttpResponse("Hello World and Andrey!!!")"""
 
-def searchProducts(request):
-	return render (request, 'search.html',{})
+def index(request):
+	return render (request, 'products/index.html',)
