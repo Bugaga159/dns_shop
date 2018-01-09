@@ -18,8 +18,9 @@ Including another URLconf
 from django.urls import path
 from django.conf.urls import url
 
-from . import views
+from .views import index, info 
 
 urlpatterns = [
-   path('', views.index, name='home')
+   path('', index,),
+   path('info/', info, )
 ]

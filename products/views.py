@@ -10,3 +10,6 @@ from .models import *
 
 def index(request):
 	return render (request, 'products/index.html',)
+
+def info(request):
+	return render (request, 'products/info.html',)
